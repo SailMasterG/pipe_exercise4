@@ -1,0 +1,4 @@
+*.o
+myapp
+.vscode/
+.DS_Store
