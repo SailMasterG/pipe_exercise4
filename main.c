@@ -63,7 +63,7 @@ int main(void)
 			else if (i == 2)
 				parssing_cmd(&cmd[i], "/usr/bin/cat", (char*[]){"cat",NULL} );
 			execve(cmd[i].path, cmd[i].args, NULL);
-			perror("No se pudo ejecutar comando CMD3");
+			perror(cmd[i].path);
 			exit(127);
 		}
 		if(old_fd != -1)
